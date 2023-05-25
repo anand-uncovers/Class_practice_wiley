@@ -460,3 +460,4 @@
 2023-05-25 16:07:24,643 [Worker-29: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.wiley:demoapp:0.0.1-SNAPSHOT @ C:\Training\Wiley\JAVA\day1_21_04_23\wiley_core_java\demoapp\pom.xml.
 2023-05-25 16:07:25,139 [Worker-29: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demoapp/src/main/java
 2023-05-25 16:07:25,143 [Worker-29: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demoapp/src/test/java
+2023-05-25 16:07:25,212 [Worker-29: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
