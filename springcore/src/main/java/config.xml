@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/spring-context.xsd">
+
+	<bean class="com.wiley.springcore.Student" name="wileystudent1">
+		<property name="studentId">
+			<value>1919</value>
+		</property>
+		<property name="studentName">
+			<value>Aastha</value>
+		</property>
+		<property name="studentAddress">
+			<value>Patna</value>
+		</property>
+	</bean>
+	<bean class="com.wiley.springcore.Student" name="wileystudent2">
+		<property name="studentId" value="1920"></property>
+		<property name="studentName" value="Anwita">
+		</property>
+		<property name="studentAddress" value="Mumbai"></property>
+	</bean>
+
+	<bean
+		class="com.wiley.springcore.Student"
+		name="wileystudent3"
+		p:studentId="1921"
+		p:studentName="Anand"
+		p:studentAddress="Delhi"
+	>
+	</bean>
+	<bean class="com.wiley.springcore.Student" name="wileystudent4">
+		<property name="stulist">
+			<list>
+				<value>11</value>
+				<value>12</value>
+				<value>13</value>
+				<value>14</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean class="com.wiley.springcore.Student" name="wileystudent5">
+		<property name="stuset">
+			<set>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+			</set>
+		</property>
+	</bean>
+
+	<bean class="com.wiley.springcore.Student" name="wileystudent6">
+		<property name="stumap">
+			<map>
+				<entry key="name" value="java" />
+				<entry key="duration" value="2months" />
+			</map>
+		</property>
+	</bean>
+
+	<bean class="com.wiley.springcore.Student" name="wileystudent7">
+		<property name="props">
+			<props>
+				<prop key="name">shubham</prop>
+				<prop key="workat">wiley</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean class="com.wiley.springcore.Address" name="addref">
+		<property name="count" value="89"></property>
+
+	</bean>
+	<bean class="com.wiley.springcore.Student" name="sturef">
+		<property name="countstud" value="80"></property>
+
+		<property name="ob">
+			<ref bean="addref" />
+		</property>
+
+	</bean>
+
+</beans>

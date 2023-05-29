@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util.xsd">
+	 <!-- Define the Instrument bean using a factory method -->
+    <bean id="myInstrument" class="com.wiley.springcore.springbeans.example.Instrument" factory-method="createInstance">
+        <constructor-arg value="Piano" />
+        <constructor-arg value="London" />
+        <constructor-arg value="2023" />
+    </bean>
+
+    <!-- Define the Servicing bean -->
+    <bean id="Servicing" class="com.wiley.springcore.springbeans.example.Servicing">
+        <constructor-arg ref="myInstrument" />
+    </bean>
+</beans>

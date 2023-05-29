@@ -1,13 +1,11 @@
 package com.wiley.bookpub;
 
-/**
- * Hello world!
- *
- */
+import com.wiley.bookpub.view.MainView;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        MainView.choice();
     }
 }

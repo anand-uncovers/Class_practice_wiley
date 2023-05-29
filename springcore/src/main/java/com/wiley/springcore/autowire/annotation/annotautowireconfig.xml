@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd
+			http://www.springframework.org/schema/util
+		https://www.springframework.org/schema/util/spring-util.xsd">
+		<util:list list-class="java.util.LinkedList" id="myfriends">
+			<value>Shivame</value>
+			<value>Sachinlue</value>
+			<value>Rishave</value>
+			<value>Janavi</value>
+			
+		</util:list>
+		<util:map map-class="java.util.HashMap" id="fees">
+			<entry key="Spring" value="90000"/>
+		</util:map>
+
+	<context:annotation-config/>
+		<bean class="com.wiley.springcore.autowire.annotation.Person"
+		name="person1">
+		<property name="friends" ref="myfriends"/>
+		
+	</bean>
+	<bean class="com.wiley.springcore.autowire.annotation.Person"
+		name="map1">
+		<property name="friends" ref="fees"/>
+		
+	</bean>
+	<bean class="com.wiley.springcore.autowire.annotation.Address"
+		name="address">
+		<property name="street" value="Boring Road1" />
+		<property name="city" value="Patna" />
+	</bean>
+	<!--<bean class="com.wiley.springcore.autowire.annotation.Address" name="addr2">
+		<property name="street" value="Boring Road2" />
+		<property name="city" value="Patna2" />-->
+
+	<!--<bean class="com.wiley.springcore.autowire.annotation.Emp" name="emp1" />-->
+	<bean class="com.wiley.springcore.autowire.annotation.Emp" name="emp1">
+		<property name="phones">
+			<list>
+				<value>11231314</value>
+				<value>12141414</value>
+				<value>131414</value>
+				<value>144241</value>
+			</list>
+		</property>
+		<property name="addresses">
+			<set>
+				<value>"B road"</value>
+				<value>"A road"</value>
+				<value>"C road"</value>
+				<value>"D road"</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="name" value="java" />
+				<entry key="duration" value="2months" />
+			</map>
+		</property>
+	</bean>
+
+
+</beans>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
