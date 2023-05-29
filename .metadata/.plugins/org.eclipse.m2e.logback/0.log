@@ -977,3 +977,7 @@
 2023-05-29 19:29:26,892 [Worker-152: Launching MainInstrument] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Training\Wiley\JAVA\day1_21_04_23\wiley_core_java\springcore\src\main\resources
 2023-05-29 19:29:26,895 [Worker-152: Launching MainInstrument] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-05-29 19:29:26,895 [Worker-152: Launching MainInstrument] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Training\Wiley\JAVA\day1_21_04_23\wiley_core_java\springcore\src\test\resources
+2023-05-29 19:42:56,570 [Worker-152: Launching App (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-29 19:42:56,577 [Worker-152: Launching App (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-05-29 19:42:56,578 [Worker-152: Launching App (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-05-29 19:42:56,578 [Worker-152: Launching App (2)] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Training\Wiley\JAVA\day1_21_04_23\wiley_core_java\bookpub\src\test\resources
